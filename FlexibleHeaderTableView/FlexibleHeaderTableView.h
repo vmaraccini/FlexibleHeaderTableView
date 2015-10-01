@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define kDefaultMinimumHeaderHeight 20
+#define kDefaultMaximumHeaderHeight 100
+
 @interface FlexibleHeaderTableView : UITableView <UITableViewDelegate>
 
 ///Gets or sets the minimum height the header view will take.
