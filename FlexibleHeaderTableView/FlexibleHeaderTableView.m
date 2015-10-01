@@ -80,7 +80,6 @@
 - (void) setTableHeaderView:(UIView *)tableHeaderView {
     UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, _maximumHeaderHeight)];
     [container addSubview:tableHeaderView];
-    [container setAutoresizesSubviews:YES];
     [tableHeaderView setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
     [super setTableHeaderView:container];
 }
@@ -95,7 +94,7 @@
     CGSize size = internalView.frame.size;
     internalView.frame = CGRectMake(origin.x,
                                     origin.y,
-                                    size.width,
+                                    self.frame.size.width,
                                     _minimumHeaderHeight + (1 - progress)*(_maximumHeaderHeight - _minimumHeaderHeight));
     
     internalView.transform = CGAffineTransformMakeTranslation(0, (self.contentOffset.y));
