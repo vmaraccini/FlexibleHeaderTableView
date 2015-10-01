@@ -13,6 +13,7 @@
 		D4AE75311BBCBED1007713C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AE752F1BBCBED1007713C0 /* Main.storyboard */; };
 		D4AE75331BBCBED1007713C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AE75321BBCBED1007713C0 /* Assets.xcassets */; };
 		D4AE75361BBCBED1007713C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AE75341BBCBED1007713C0 /* LaunchScreen.storyboard */; };
+		D4AE75401BBCBF27007713C0 /* FlexibleHeaderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE753F1BBCBF27007713C0 /* FlexibleHeaderTableView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D4AE75321BBCBED1007713C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4AE75351BBCBED1007713C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4AE75371BBCBED1007713C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AE753E1BBCBF27007713C0 /* FlexibleHeaderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleHeaderTableView.h; sourceTree = "<group>"; };
+		D4AE753F1BBCBF27007713C0 /* FlexibleHeaderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleHeaderTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		D4AE75251BBCBED1007713C0 /* FlexibleHeaderTableView */ = {
 			isa = PBXGroup;
 			children = (
+				D4AE753D1BBCBEE5007713C0 /* FlexibleHeaderTableView */,
 				D4AE75291BBCBED1007713C0 /* AppDelegate.h */,
 				D4AE752A1BBCBED1007713C0 /* AppDelegate.m */,
 				D4AE752C1BBCBED1007713C0 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				D4AE75271BBCBED1007713C0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4AE753D1BBCBEE5007713C0 /* FlexibleHeaderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D4AE753E1BBCBF27007713C0 /* FlexibleHeaderTableView.h */,
+				D4AE753F1BBCBF27007713C0 /* FlexibleHeaderTableView.m */,
+			);
+			name = FlexibleHeaderTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 				D4AE752E1BBCBED1007713C0 /* ViewController.m in Sources */,
 				D4AE752B1BBCBED1007713C0 /* AppDelegate.m in Sources */,
 				D4AE75281BBCBED1007713C0 /* main.m in Sources */,
+				D4AE75401BBCBF27007713C0 /* FlexibleHeaderTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

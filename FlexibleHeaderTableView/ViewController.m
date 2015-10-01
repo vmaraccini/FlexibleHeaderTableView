@@ -16,7 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    view.backgroundColor = [UIColor blackColor];
+    [_tableView setTableHeaderView:view];
+    
+    [_tableView addAnimationBlock:^(CGFloat progress) {
+        view.backgroundColor = [UIColor colorWithWhite:progress/2 alpha:1];
+    }];
+    
+    [_tableView setDelegate:self];
+    [_tableView setDataSource:self];
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [[UITableViewCell alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
